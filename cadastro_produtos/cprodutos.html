@@ -1,7 +1,3 @@
-<?php
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,21 +18,20 @@
             </a>
         </div>
 
-        <nav class="links">
-            <ul>
-                <li><a href="../index.html" class="rosa-claro">Home</a></li>
-                <li><a href="../saiba_mais/saiba.html" class="atendimento">Atendimento</a></li>
-            </ul>
-        </nav>
+        <div class="links">
+                <a href="../index.html" class="rosa-claro">Home</a>
+                <a href="../saiba_mais/saiba.html" class="atendimento">Atendimento</a>
+        </div>
     </header>
     <main>
         <h1>Cadastro de produtos</h1>
         <h2>________________________________________________________________________</h2>
         <div class="cad-produtos">
             <div class="foto-produto">
-                <!-- <h3>Foto</h3> -->
-                <label id="imgFoto" for="foto"><img src="../img/add-imagem.png" alt=""></label>
-                <input type="file" name="foto" id="foto" accept="image/*" hidden />
+                <div class="foto">
+                    <label id="imgFoto" for="foto"><img src="../img/add-img.png" alt=""></label>
+                    <input type="file" name="foto" id="foto" accept="image/*" hidden />
+                </div>
                 <div class="button">
                     <input type="button" onclick="javascript:window.location.href = '../'" value="Salvar">
                     <input type="button" onclick="javascript:window.location.href = '../'" value="Cancelar">
@@ -64,8 +59,8 @@
                     <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição...">
 
                 </div>
-                   
-                    
+
+
             </div>
         </div>
     </main>
