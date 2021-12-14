@@ -1,0 +1,87 @@
+<?php
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cprodutos.css" />
+    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <title>CADASTRO DE PRODUTOS</title>
+</head>
+
+<body>
+    <header>
+        <div class="div-logo">
+            <a href="" class="logo">
+                <img src="../img/logo-admin.jfif" alt="Logo" width="92vh" />
+            </a>
+        </div>
+
+        <nav class="links">
+            <ul>
+                <li><a href="../index.html" class="rosa-claro">Home</a></li>
+                <li><a href="../saiba_mais/saiba.html" class="atendimento">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastro de produtos</h1>
+        <h2>________________________________________________________________________</h2>
+        <div class="cad-produtos">
+            <div class="foto-produto">
+                <!-- <h3>Foto</h3> -->
+                <label id="imgFoto" for="foto"><img src="../img/add-imagem.png" alt=""></label>
+                <input type="file" name="foto" id="foto" accept="image/*" hidden />
+                <div class="button">
+                    <input type="button" onclick="javascript:window.location.href = '../'" value="Salvar">
+                    <input type="button" onclick="javascript:window.location.href = '../'" value="Cancelar">
+                </div>
+            </div>
+            <div class="inf-produtos">
+                <div class="input-label">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome...">
+                </div>
+                <div class="input-label">
+                    <label for="valor">Valor:</label>
+                    <input type="text" name="valor" id="valor" placeholder="Digite o valor...">
+                </div>
+                <div class="input-label">
+                    <label for="desconto">Desconto:</label>
+                    <input type="text" name="desconto" id="desconto" placeholder="Digite o desconto...">
+                </div>
+                <div class="input-label">
+                    <label for="parcelas">Quantidade de parcelas:</label>
+                    <input type="text" name="parcelas" id="parcelas" placeholder="Digite a quantidade de parcelas...">
+                </div>
+                <div class="input-label">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição...">
+
+                </div>
+                   
+                    
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_class">
+            <h3 class="informacoes">Sobre nós</h3>
+            <div class="img_copyright">
+                <img class="redessociais" src="../img/facebook-logo.png" alt="">
+                <img class="redessociais" src="../img/youtube.png" alt="">
+                <img class="redessociais" src="../img/pinterest.PNG" alt="">
+                <img class="redessociais" src="../img/instagram.png" alt="">
+                <img class="redessociais" src="../img/whatsapp.png" alt="">
+            </div>
+            <h3 class="copyright">© Copyright 2021 Clarissa Estelia Makeup </h3>
+            <h3 class="informacoes">Politica de privacidade</h3>
+
+    </footer>
+
+</body>

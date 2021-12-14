@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffe9e9;
+}
+
+/* inicio do header */
+
+header {
+    background-color: #e57373;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+
+    gap: 3vh;
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: 5vh;
+
+    border-radius: 2px;
+    font-size: 20px;
+
+    text-decoration-line: none;
+}
+.rosa-claro {
+    background-color: #e9c3c3;
+    color: black;
+}
+
+.tom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 6vh;
+    background-color: #af4448;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-decoration-line: none;
+}
+.loja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 6vh;
+    background-color: #af4448;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-decoration-line: none;
+}
+
+/* fim do header */
+
+/* inicio do main */
+
+h1 {
+    padding-left: 90vh;
+    margin-top: 7vh;
+    font-size: 50px;
+}
+
+h2 {
+    padding-left: 15vh;
+    margin-top: 2vh;
+    font-size: 50px;
+}
+.SOP {
+    background-color: rgba(233, 86, 225, 0.836);
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.SOPmidia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+P {
+    font-family: 'Courier New', Courier, monospace;
+}
+footer {
+    display: flex;
+    margin-top: 199px;
+    background-color: black;
+    /* width: 204.9vw; */
+    height: 13vh;
+}
+
+.footer_class {
+    display: flex;
+    color: white;
+
+    gap: 25vw;
+    margin-left: 10vw;
+    /* margin-right: 10vw; */
+}
+.copyright {
+    display: flex;
+    margin-top: 9vh;
+}
+.informacoes {
+    margin-top: 6vh;
+}
+.img_copyright {
+    display: flex;
+    gap: 0.5vw;
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: 32vw;
+}
+.redessociais {
+    border-radius: 100%;
+    width: 2vw;
+    height: 3vh;
+}
+h3 {
+    display: flex;
+    color: white;
+}

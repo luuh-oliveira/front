@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffe9e9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* inicio do header */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #E57373;
+    width: 99.1vw;
+    height: 10vh;
+    justify-content: center;
+ 
+    align-items: center;
+}
+
+.logo {
+    width: 14%;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.logo img{
+    width: 32%;
+    margin-left: 5vw;
+    border-radius: 20%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 600px;
+    
+    text-align: center;
+    align-items: center;
+    
+}
+
+.links .rosa-claro{  
+    
+    font-size: 1.2rem;
+    user-select: none;
+    border-radius: 5px;
+    background-color: #FFBCBB;
+    color: black;
+    border: none;
+    
+    width: fit-content;
+    padding: 15px;
+    margin-left: 20px;
+    
+}
+.loja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #AF4448;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    text-decoration-line: none;
+    width: 120px;
+    height: 60px;
+    
+}
+/* fim do header */
+
+/* inicio do main */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+h1 {
+    align-self: center;
+    margin-top: 7vh;
+    font-size: 50px;
+}
+
+h2 {
+    align-self: center;
+    margin-top: 2vh;
+    font-size: 50px;
+}
+
+.descrições {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    background-color: #af4448;
+    padding-left: 10vh;
+    font-size: 2vh;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.at {
+    background-color: #ffa4a2;
+    width: 15vw;
+    height: 35vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+p {
+    margin: 20px;
+    font-size: 17px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    margin-top: 16vh;
+    background-color: black;
+    width: 99vw;
+    height: 13vh;
+}
+
+.footer_class{
+    display: flex;
+    color: white;
+
+    gap: 25vw;
+    margin-left: 10vw;
+    /* margin-right: 10vw; */
+} 
+.copyright{
+  display: flex;
+  margin-top: 9vh;
+}
+.informacoes{
+  margin-top: 6vh;
+}
+.img_copyright{
+  display: flex;
+  gap: 0.5vw;
+  position: absolute;
+  margin-top: 4vh;
+  margin-left: 32vw;
+  
+}
+.redessociais{
+border-radius: 100%;
+width: 35px;
+height: 35px;
+
+}
+h3{
+    display: flex;
+    color: white;
+   
+  
+}
+@media (max-width: 768px) {
+    
+    .logo {
+        width: 30%;
+        margin-top: 5px;
+        align-self: flex-start;
+    }
+    
+    .logo img{
+        width: 100%;
+        margin-left: 10px;
+        border-radius: 20%;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 2px;
+        
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    .links .rosa-claro {  
+        
+        font-size: 0.5rem;
+        user-select: none;
+        border-radius: 5px;
+        background-color: #FFBCBB;
+        color: rgb(2, 1, 1);
+        border: none;
+        
+        width: fit-content;
+        padding: 6px;
+        
+    }
+    .loja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #AF4448;
+        border-radius: 5px;
+        font-size: 10px;
+        color: white;
+        border: none;
+        text-decoration-line: none;
+        width: 24px;
+        height: 10px;
+    }
+
+    /* MAIN */
+    .descrições {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        height: auto;
+    }
+    .at {
+        background-color: #ffa4a2;
+        width: 70vw;
+        height: 40vh;
+        margin-top: 5vh;
+        border-radius: 10px;   
+    }
+    p {
+        margin: 18px;
+        font-size: 14px;
+    }
+    h1 {
+        padding-left: 32vw;
+        margin-top: 7vh;
+        font-size: 24px;
+    }
+    h2 {
+        padding-left: 16vh;
+        margin-top: 2vh;
+        font-size: 5px;
+    }
+}
