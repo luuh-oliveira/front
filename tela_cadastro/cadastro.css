@@ -78,8 +78,8 @@ header {
 
 main{
     display: flex;
-
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     
 }
@@ -87,77 +87,12 @@ main{
 .aba-cadastro-pessoa{
     display: flex;
     background-color: #FF867C;
-
-    width: 75vw;
-    height: 80vh;
-    margin-top: 5vh;
-    border-radius: 50px;
+    width: 40%;
+    height: 80%;
+    margin-top: 3%;
+    border-radius: 18px;
     
 }
-.img-usuario-perfil{
-    display: flex;
-    flex-direction: column;
-    width: 55vw;
-    height: 55vh;
-    background-color: #fae9ea;
-
-
-    margin-top: 5vh; 
-    margin-left: 5vw;
-    border-radius: 15px;
-
-}
-.img-usuario-perfil input{
-    padding-top: 35vh;
-    padding-left: 3vw;
-    
-}
-.foto-perfil{
-    border-radius: 15px;
-}
-p{
-    font-size: 2rem;
-}
-h1{
-    margin-top: 5vh;
-    margin-left: 3vw;
-
-}
-#texto-foto{
-    position: absolute;
-    margin: 5vh 4vw;
-}
-
-.informacoes-usuario{
-
-    display: flex;
-    flex-direction: column;
-    padding-top: 5vh;
-    margin-right: 5vw;
-    margin-left: 28vw;
-
-    gap: 3vh;
-
-}
-.informacoes-usuario input{
-    height: 4vh;
-    width: 16vw;
-    border-radius: 8px;
-    border: black;
-    font-size: 18px;
-    padding-left: 10px;
-}
-.informacoes-usuario button{
-    height: 5vh;
-    width: 16vw;
-    gap: 3vh;
-    border-radius: 8px;
-    border: white;
-}
-
-
-
-
 /* FOOTER */
 footer{
     display: flex;
