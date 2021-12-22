@@ -15,7 +15,7 @@ header {
     background-color: #E57373;
     width: 100%;
     height: 10vh;
-    gap: 50%;
+    gap: 40%;
     /* justify-content: center; */
 
     /* align-items: center; */
@@ -77,6 +77,7 @@ input{
     width: 120px;
     height: 60px;
 }
+
 .tom {
     display: flex;
     justify-content: center;
@@ -109,13 +110,8 @@ h2 {
     margin-top: 2vh;
     font-size: 50px;
 }
-.SOP {
-    display: flex;
-    background-color: rgba(233, 86, 225, 0.836);
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.SOPmidia {
+.lojaImagens {
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
@@ -169,8 +165,78 @@ h3 {
 
 @media (max-width: 768px) {
 
-    .SOPmidia {
+    header {
+        padding-left: 0px;
+        gap: 0px;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+        border-radius: 20%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .botoes .rosa-claro {
+
+        font-size: 0.6rem;
+        user-select: none;
+        border-radius: 5px;
+        background-color: #FFBCBB;
+        color: rgb(2, 1, 1);
+        border: none;
+
+        width: 100%;
+
+        padding: 5px;
+        align-self: center;
+        margin-left: 5px;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .botoes {
+        display: flex;
         flex-direction: column;
+        gap: 5px;
+    }
+
+
+    .loja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #AF4448;
+        color: white;
+        border-radius: 5px;
+        font-size: 12px;
+        text-decoration-line: none;
+
+        width: auto;
+        height: 45px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    main{
+        width: 100vw;
     }
 
     h1 {
@@ -179,12 +245,26 @@ h3 {
         margin-top: 7vh;
         font-size: 24px;
     }
-
+    
     h2 {
-        padding-left: 16vh;
-        margin-top: 2vh;
+        padding-left: 0;
         font-size: 5px;
     }
+
+    .lojaImagens {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+    }
     
+    img{
+        width: 50%;
+        height: auto;
+    }
 
 }

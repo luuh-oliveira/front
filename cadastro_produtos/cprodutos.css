@@ -265,13 +265,6 @@ height: 3vh;
         text-align: center;
     }
 
-    .botoes {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-    }
-
-
     .atendimento {
         display: flex;
         justify-content: center;
