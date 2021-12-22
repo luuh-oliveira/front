@@ -15,54 +15,58 @@ header {
     display: flex;
     flex-direction: row;
     background-color: #E57373;
-    width: 99.1vw;
+    width: 100%;
     height: 10vh;
-    justify-content: center;
- 
-    align-items: center;
+    gap: 50%;
+    /* justify-content: center; */
+
+    /* align-items: center; */
 }
 
 .logo {
-    width: 14%;
     margin-top: 5px;
     align-self: flex-start;
+    margin-left: 5vw;
 }
 
-.logo img{
-    width: 32%;
-    margin-left: 5vw;
+.logo img {
+    width: 87px;
     border-radius: 20%;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin-left: 600px;
-    
+
     text-align: center;
     align-items: center;
-    
+
+    align-self: center;
+    justify-self: flex-end;
+
 }
 
-.links .rosa-claro{  
-    
+input{
+    cursor: pointer;
+}
+
+.links .rosa-claro {
+
     font-size: 1.2rem;
     user-select: none;
     border-radius: 5px;
     background-color: #FFBCBB;
     color: black;
     border: none;
-    
+
     width: fit-content;
     padding: 15px;
     margin-left: 20px;
-    
+
 }
+
 .loja {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     padding: 15px;
     background-color: #AF4448;
     border-radius: 5px;
@@ -70,18 +74,32 @@ header {
     color: white;
     border: none;
     text-decoration-line: none;
+
+    margin-left: 25px;
     width: 120px;
     height: 60px;
-    
 }
+
+.imagem-usuario {
+    display: flex;
+    /* flex-direction: row; */
+    margin-left: 60px;
+    width: 80px;
+    height: 80px;
+}
+
 /* fim do header */
 
 /* inicio do main */
-main{
+
+main {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    user-select: none;
+
 }
 
 h1 {
@@ -98,7 +116,7 @@ h2 {
 
 .descrições {
     display: flex;
-    gap: 10%;
+    gap: 250px;
     align-items: center;
     justify-content: center;
 }
@@ -111,8 +129,8 @@ h2 {
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-
 }
+
 .at {
     background-color: #ffa4a2;
     width: 15vw;
@@ -120,6 +138,7 @@ h2 {
     margin-top: 5vh;
     border-radius: 10px;
 }
+
 p {
     margin: 20px;
     font-size: 17px;
@@ -127,103 +146,136 @@ p {
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 16vh;
     background-color: black;
-    width: 99vw;
-    height: 13vh;
+    width: 100%;
 }
 
-.footer_class{
+.footer_class {
     display: flex;
+    width: 100%;
     color: white;
-
-    gap: 25vw;
-    margin-left: 10vw;
+    gap: 10%;
+    justify-content: center;
     /* margin-right: 10vw; */
-} 
-.copyright{
-  display: flex;
-  margin-top: 9vh;
 }
-.informacoes{
-  margin-top: 6vh;
+
+.informacoes {
+    margin-top: 6vh;
 }
-.img_copyright{
-  display: flex;
-  gap: 0.5vw;
-  position: absolute;
-  margin-top: 4vh;
-  margin-left: 32vw;
-  
+
+.img_copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 4vh;
 }
-.redessociais{
-border-radius: 100%;
-width: 35px;
-height: 35px;
+
+.redessociais {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
 
 }
-h3{
-    display: flex;
+
+h3 {
     color: white;
-   
-  
 }
+
+/* FIM DO FOOTER*/
+
 @media (max-width: 768px) {
-    
+
+    header {
+        gap: 0px;
+    }
+
     .logo {
-        width: 30%;
+        width: 200px;
+        height: 200px;
         margin-top: 5px;
         align-self: flex-start;
+        margin-left: 5px;
     }
-    
-    .logo img{
-        width: 100%;
-        margin-left: 10px;
+
+    .logo img {
+        width: 50px;
         border-radius: 20%;
     }
-    
-    .links{
+
+    .links {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        margin-left: 2px;
-        
+
         text-align: center;
         align-items: center;
-        
     }
-    
-    .links .rosa-claro {  
-        
-        font-size: 0.5rem;
+
+    .links .rosa-claro {
+
+        font-size: 0.7rem;
         user-select: none;
         border-radius: 5px;
         background-color: #FFBCBB;
         color: rgb(2, 1, 1);
         border: none;
-        
-        width: fit-content;
-        padding: 6px;
-        
+
+        width: 100px;
+
+        padding: 8px;
+        align-self: center;
+        margin-left: 10px;
+
+        align-items: center;
+        text-align: center;
     }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+
     .loja {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        text-align: center;
         background-color: #AF4448;
-        border-radius: 5px;
-        font-size: 10px;
         color: white;
-        border: none;
+        border-radius: 5px;
+        font-size: 12px;
         text-decoration-line: none;
-        width: 24px;
-        height: 10px;
+
+        width: 45px;
+        height: 45px;
+        margin-left: 20px;
+        margin-right: 10px;
     }
 
+    .imagem-usuario {
+        display: flex;
+        margin-left: 6px;
+        width: 32px;
+        height: 32px;
+    }
+
+
     /* MAIN */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+
+    }
+
     .descrições {
         display: flex;
         flex-direction: column;
@@ -234,25 +286,77 @@ h3{
         width: auto;
         height: auto;
     }
+
     .at {
         background-color: #ffa4a2;
         width: 70vw;
         height: 40vh;
         margin-top: 5vh;
-        border-radius: 10px;   
+        border-radius: 10px;
     }
+
     p {
         margin: 18px;
         font-size: 14px;
     }
+
     h1 {
         padding-left: 32vw;
         margin-top: 7vh;
         font-size: 24px;
     }
+
     h2 {
         padding-left: 16vh;
         margin-top: 2vh;
         font-size: 5px;
     }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 16vh; */
+        background-color: black;
+        width: 100%;
+    }
+
+    .footer_class {
+        display: flex;
+        color: white;
+
+        gap: 25vw;
+        margin-left: 10vw;
+        /* margin-right: 10vw; */
+    }
+
+    .copyright {
+
+        margin-top: 9vh;
+    }
+
+    .informacoes {
+        margin-top: 6vh;
+    }
+
+    .img_copyright {
+
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+
+        margin-top: 4vh;
+        margin-left: 32vw;
+        width: 200px;
+
+
+    }
+
+    .redessociais {
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+    }
+
 }

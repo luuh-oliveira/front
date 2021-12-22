@@ -30,51 +30,50 @@ header {
 
 }    
 
-.links{
+.links {
     display: flex;
     flex-direction: row;
-    gap: 10%;
-}
 
-.links a {
-    text-decoration: none;
-    font-size: 20px;
-    user-select: none;
-    transition: all 1s;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-    width: 15vh;
-    height: 5vh;
 
-    border-radius: 2px;
-    font-size: 20px;
+    align-self: center;
+    justify-self: flex-end;
 
-    text-decoration-line: none;
 }
-
 
 input{
     cursor: pointer;
-    font-size: 1.2rem;
 }
 
-.rosa-claro {  
+.links .rosa-claro {
+
+    font-size: 1.2rem;
     user-select: none;
     border-radius: 5px;
     background-color: #FFBCBB;
     color: black;
     border: none;
-    
-    width: fit-content;
+
+    width: auto;
     padding: 15px;
+    margin-left: 20px;
+
 }
 
 .atendimento {
+
+    padding: 15px;
     background-color: #AF4448;
     border-radius: 5px;
+    font-size: 20px;
     color: white;
+    border: none;
     text-decoration-line: none;
+
+    margin-left: 25px;
+    width: auto;
+    height: 60px;
 }
 
 /*  FIM DO HEADER   */
@@ -221,6 +220,75 @@ height: 3vh;
 
 @media (max-width: 768px) {
 
+    header {
+        padding-left: 10px;
+        gap: 30px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        margin-top: 5px;
+        align-self: flex-start;
+        margin-left: 5px;
+    }
+
+    .logo img {
+        width: 50px;
+        border-radius: 20%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .links .rosa-claro {
+
+        font-size: 0.7rem;
+        user-select: none;
+        border-radius: 5px;
+        background-color: #FFBCBB;
+        color: rgb(2, 1, 1);
+        border: none;
+
+        width: auto;
+
+        padding: 8px;
+        align-self: center;
+        margin-left: 10px;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+
+    .atendimento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #AF4448;
+        color: white;
+        border-radius: 5px;
+        font-size: 12px;
+        text-decoration-line: none;
+
+        width: auto;
+        height: 45px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
     main{
         height: 100vh;
     }
@@ -266,6 +334,53 @@ height: 3vh;
     .input-label {
         width: 200%;
     }
+
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 16vh; */
+        background-color: black;
+        width: 100%;
+    }
+
+    .footer_class {
+        display: flex;
+        color: white;
+
+        gap: 25vw;
+        margin-left: 10vw;
+        /* margin-right: 10vw; */
+    }
+
+    .copyright {
+
+        margin-top: 9vh;
+    }
+
+    .informacoes {
+        margin-top: 6vh;
+    }
+
+    .img_copyright {
+
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+
+        margin-top: 4vh;
+        margin-left: 32vw;
+        width: 200px;
+
+
+    }
+
+    .redessociais {
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+    }
+
 
 
 
